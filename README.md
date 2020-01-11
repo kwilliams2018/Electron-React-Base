@@ -1,3 +1,15 @@
+# Electron-React-Base
+This repo is meant as a base starting point for creating an Electron app with React, or even just a React app with some slight configuration / setup performed.
+
+## Installed packages:
+
+- electron: To build an electron app
+- electron-builder: To create the distribution files for a production electron app
+- electron-is-dev: For electron to load different files based on dev/production
+
+- redux: For state management
+- react-redux: For state management
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
