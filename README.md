@@ -37,8 +37,27 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `npm run electron-run`
+
+Runs the electron application. Must perform npm start first.
+
+```
+npm start
+npm run electron-run
+```
+
+### `npm run electron-build`
+
+Builds a release version of the react app, followed by the electron build that creates an installer in the dist directory
+
+### `npm run electron-release`
+
+Builds a release version of the react app, followed by the electron build that creates an installer in the dist directory. Sets --publish=always
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+To learn Electron, check out the [Electron documentation](https://electronjs.org/docs).
