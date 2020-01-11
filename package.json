@@ -2,6 +2,13 @@
   "name": "electron_react_base",
   "version": "0.1.0",
   "private": true,
+  "description": "Your Description Here",
+  "author": "Author Here",
+  "build": {
+    "appId": "com.some.id"
+  },
+  "main": "public/electron.js",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -10,6 +17,8 @@
     "@types/node": "^12.12.24",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
+    "cross-env": "^6.0.3",
+    "electron-is-dev": "^1.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
@@ -19,7 +28,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron-run": "electron .",
+    "electron-release": "npm run build && electron-builder --publish=always",
+    "electron-build": "npm run build && electron-builder"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron": "^7.1.8",
+    "electron-builder": "^21.2.0"
   }
 }
