@@ -16,7 +16,7 @@ export default function(
     action: TAppReducerActions) {
 
         switch(action.type) {
-            case EReduxActionTypes.GET_TEMP_PROPERTY: 
+            case EReduxActionTypes.UPDATE_TEMP_PROPERTY: 
                 return {
                     ...state, 
                     tempProperty: !state.tempProperty
